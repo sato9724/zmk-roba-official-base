@@ -17,5 +17,6 @@
 #     artifact-name: corne_left_with_logging
 #
 ---
-board: ["xiao_ble"]
-shield: ["roBa_R","roBa_L","settings_reset"]
+include:
+  - board: xiao_ble
+    shield: roBa_L
