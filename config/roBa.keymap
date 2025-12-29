@@ -40,13 +40,13 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W      &kp E      &kp R  &kp T                               &none  &none  &none  &none  &none
-&kp A             &kp S      &kp D      &kp F  &kp BACKSPACE  &none         &none  &none  &none  &none  &none  &none
-&mt LEFT_SHIFT Z  &kp X      &kp C      &kp V  &kp B          &kp RETURN    &none  &none  &none  &none  &none  &none
-&kp RC(Z)         &kp LC(C)  &kp LC(V)  &mo 1  &mo 2          &mo 3         &none  &none                       &none
+&kp Q            &kp W      &kp E      &kp R            &kp T                               &none  &none  &none  &none  &none
+&kp A            &kp S      &kp D      &kp F            &kp BACKSPACE  &none         &none  &none  &none  &none  &none  &none
+&mt LC(Y) LC(Z)  &kp X      &kp LC(C)  &mt LG(V) LC(V)  &kp B          &kp RETURN    &none  &none  &none  &none  &none  &none
+&kp RC(Z)        &kp LC(C)  &kp LC(V)  &mo 1            &mo 2          &mo 3         &none  &none                       &none
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         layer_6 {
