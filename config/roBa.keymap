@@ -39,10 +39,10 @@
 
         default_layer {
             bindings = <
-&kp LS(LEFT_ARROW)  &kp W        &kp LS(RIGHT_ARROW)  &kp R            &kp T                               &none  &none  &none  &none  &none
-&kp LEFT_ARROW      &kp SPACE    &kp RIGHT_ARROW      &kp F            &kp BACKSPACE  &none         &none  &none  &none  &none  &none  &none
-&kp LC(MINUS)       &mt X SPACE  &kp LC(LS(MINUS))    &mt LG(V) LC(V)  &kp B          &kp RETURN    &none  &none  &none  &none  &none  &none
-&kp RC(Z)           &kp LC(C)    &kp LC(V)            &mo 1            &kp SPACE      &mo 3         &none  &none                       &none
+&kp LS(LEFT_ARROW)  &mt LC(Y) LC(Z)  &kp LS(RIGHT_ARROW)  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&kp LEFT_ARROW      &kp SPACE        &kp RIGHT_ARROW      &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(MINUS)       &kp LC(I)        &kp LC(LS(MINUS))    &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_ALT        &trans           &trans               &mo 1   &trans  &trans    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -52,27 +52,11 @@
             bindings = <
 &trans                    &kp LS(BACKSPACE)         &trans                     &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &kp LC(LS(LEFT_BRACKET))  &kp LC(NON_US_BACKSLASH)  &kp LS(LC(RIGHT_BRACKET))  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LC(LS(LEFT_BRACKET))  &kp BACKSPACE             &kp LC(LS(RIGHT_BRACKET))  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(C)                 &kp BACKSPACE             &kp LC(V)                  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans                    &trans                    &trans                     &mo 1   &trans  &trans    &trans  &trans                          &trans
             >;
-        };
 
-        layer_2 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
-            >;
+            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
         };
     };
 };
