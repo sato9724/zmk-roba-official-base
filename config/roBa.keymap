@@ -50,10 +50,10 @@
 
         layer_1 {
             bindings = <
-&trans                    &kp LS(BACKSPACE)  &trans               &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&kp LC(LS(LEFT_BRACKET))  &kp LC(BACKSLASH)  &kp LS(LC(AT_SIGN))  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LC(C)                 &kp BACKSPACE      &kp LC(V)            &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans                    &trans             &trans               &mo 1   &trans  &trans    &trans  &trans                          &trans
+&trans                    &kp LS(BACKSPACE)  &trans              &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&kp LC(LS(LEFT_BRACKET))  &kp NUMBER_1       &kp NUMBER_2        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(C)                 &kp BACKSPACE      &mt NUMBER_3 LC(V)  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans                    &trans             &trans              &mo 1   &trans  &trans    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
